@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
 :root{
     --white: #FFFFFF;
     --black: #000000;
@@ -6,6 +6,9 @@
     --very-light-pink: #C7C7C7;
     --text-input-field: #F7F7F7;
     --hospital-green: #ACD9B2;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
 }
 
 
@@ -57,6 +60,7 @@ body{
     margin: 0 auto;
 }
 
+
 .mb-1 {
     margin-bottom: 0.25rem;
 }
@@ -73,6 +77,10 @@ body{
     margin-bottom: 1rem;
 }
 
+.mt-auto {
+    margin-top: auto;
+}
+
 .mt-1 {
     margin-top: 0.25rem;
 }
@@ -87,6 +95,10 @@ body{
 
 .mt-4 {
     margin-top: 1rem;
+}
+
+.mt-8 {
+    margin-top: 2rem;
 }
 
 /* Sizing */
@@ -235,6 +247,33 @@ body{
 .border-hospital-green {
     border-color: var(--hospital-green);
 }
+
+
+/* Buttons */
+.button {
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    width: 100%;
+    border-radius: 8px;
+    height: 50px;
+    font-size: var(--md);
+    background-color: var(--white);
+}
+
+
+.primary-button {
+    border: none;
+    color: var(--white);
+    background-color: var(--hospital-green);
+
+}
+
+.secondary-button {
+    color: var(--hospital-green);
+    border-color: var(--hospital-green);
+}
+
 
 
 @media (min-width: 768px) {

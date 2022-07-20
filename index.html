@@ -6,17 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YardSale</title>
     <!-- <link rel="icon" type="image/png" href="/favicon96x96.png" sizes="96x96"> -->
-    <link rel="stylesheet" href="./assets/css/header.css">
-    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/components/header.css">
+    <link rel="stylesheet" href="./assets/css/components/footer.css">
     <link rel="stylesheet" href="./assets/css/global.css">
 </head>
 <body>
     <header class="px-4">
-        <nav class="nav w-full h-full flex items-center">
-            <div clas></div>
+        <nav class="nav w-full h-full flex justify-between items-center">
+            <div class>
+                <img
+                    src="./assets/icons/icon_menu.svg"
+                    alt="menu-logo"
+                />
+            </div>
             <img
                 src="./assets/logos/logo_yard_sale.svg"
-                alt="logo"
+                alt="yardsale-logo"
+                height="25px"
+            />
+            <img
+                src="./assets/icons/icon_shopping_cart.svg"
+                alt="cart-logo"
             />
         </nav>
     </header>
@@ -28,7 +38,23 @@
                     class="p-1 rounded-md"
                     placeholder="Search product..."
                 /> -->
-
+                <div class="flex gap-4 w-full overflow-x-auto mx-auto px-4 py-4 w-90">
+                    <div class="border border-hospital-green text-hospital-green px-4 py-1 rounded-sm"> 
+                        All 
+                    </div>
+                    <div class="text-very-light-pink px-4 py-1 rounded-sm"> 
+                        Clothes
+                    </div>
+                    <div class="text-very-light-pink px-4 py-1 rounded-sm"> 
+                        Electronics
+                    </div>
+                    <div class="text-very-light-pink px-4 py-1 rounded-sm"> 
+                        Features
+                    </div>
+                    <div class="text-very-light-pink px-4 py-1 rounded-sm"> 
+                        Toys
+                    </div>
+                </div>
                 <div class="grid grid-cols-2 md-grid-cols-4 place-content-center mt-4 gap-4">
                     <div class="card-item">
                         <img
